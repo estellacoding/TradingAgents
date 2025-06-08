@@ -108,12 +108,12 @@ def get_finnhub_company_insider_transactions(
     look_back_days: Annotated[int, "how many days to look back"],
 ):
     """
-    Retrieve insider transcaction information about a company (retrieved from public SEC information) for the past 15 days
+    Retrieve insider transaction information about a company (retrieved from public SEC information) for the past 15 days
     Args:
         ticker (str): ticker symbol of the company
         curr_date (str): current date you are trading at, yyyy-mm-dd
     Returns:
-        str: a report of the company's insider transaction/trading informtaion in the past 15 days
+        str: a report of the company's insider transaction/trading information in the past 15 days
     """
 
     date_obj = datetime.strptime(curr_date, "%Y-%m-%d")
